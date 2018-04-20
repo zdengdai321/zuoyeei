@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <mate charset = "utf-8">
+  <title>zzz</title>
+</head>
+<body>
+  <script>
+    var scores = [66, 23, 88, 79, 48, 96, 71, 41, 92, 80];
+    var max = scores[0];
+    var sign = [0];
+
+    for(var i = 1 ; i < scores.length ; i++){
+      if( scores[i] > max){
+        max = scores[i];
+        sign = [i];
+      }
+    }
+    document.write("数组里最大的是:" + max + "下标是:" + sign +"<br>");
+  </script>
+
+</body>
+
+</html>
