@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>object</title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+    <script>
+      var ford = {
+        make:  'ford',
+        model:  'focus',
+        year:  2006,
+        color: 'blue',
+        passengers: 4,
+        mileage: 130000
+      }
+      var wuLin = {
+        make:  'wuLin',
+        model:  'hongGuang',
+        year:  2016,
+        color: 'silver',
+        passengers: 7,
+        mileage: 500000
+      }
+      function isNew(car){
+        if ( car.year >= 2016 && car.mileage < 10000){
+          document.write("新车");
+        } else {
+          document.write("您的车" + car.make + "不值钱了");
+        }
+        document.write("<br>");
+      }
+       isNew(ford)
+       isNew(wuLin)
+    </script>
+  </body>
+</html>

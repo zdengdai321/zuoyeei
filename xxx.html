@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+
+  <script>
+      function init() {
+      var obj = document.getElementById("t");
+      var pic = document.getElementById("pic");
+
+      obj.innerHTML = "改个名字";
+    }
+      function changepic(){
+        if ( document.getElementById("pic").getAttribute("src") == "1.jpg"){
+           document.getElementById("pic").setAttribute("src","2.jpg");
+          }else{
+             document.getElementById("pic").setAttribute("src","1.jpg");
+           }
+       
+
+      }
+  
+    
+    window.onload = init;
+    </script>
+</head>
+<body>
+  <h1 id="t">我只是一个标题</h1>
+  <img id="pic" src="1.jpg" alt="妇联图"><br>
+  <button onclick="changepic()">点我试试</button>
+</body>
+</html>
